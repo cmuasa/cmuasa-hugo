@@ -1,0 +1,169 @@
+# Site settings
+baseurl = "http://cmuasa.github.io"
+languageCode = "en-us"
+title = "CMU ASA"
+theme = "agency"
+copyright = "Alex Du"
+publishdir = "cmuasa.github.io"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+    # You can use Markdown syntax for urls [text](//url.to/source) or
+    # most longer texts.
+    #
+    # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+    # for more icons. The icons are represented by their corresponding
+    # CSS class.
+
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "CMU ASA"
+    description = "Carnegie Mellon University's largest cultural organization. "
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    email = "amdu@andrew.cmu.edu"
+
+
+    # Navigation
+    [params.navigation]
+        brand = "cmu asa"
+        portfolio = "asa lovin'"
+        about = "about"
+        team = "board"
+        contact = "Mailing List"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #    url = "http://gohugo.io"
+    #    name = "Hugo"
+    #    weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+        url = "http://gohugo.io"
+        name = "External link"
+        weight = 10
+
+
+    # Hero section
+    [params.hero]
+        # To change the background image of the hero, replace 'header-bg.jpg' in
+        # the 'static/img' folder.
+        title = "Carnegie Mellon University"
+        subtitle = "Asian Students Association"
+        buttonText = "Join!"
+
+
+    # Portfolio section
+    [params.portfolio]
+        enable = true
+        # All projects defined in their own files. You can find example projects
+        # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+        # at the root of this Hugo site.
+        # For more informtion take a look at the README.
+        title = "::  ASA Lovin'  ::"
+        subtitle = "The Carnegie Mellon Asian Student Association, better known as CMU ASA, is the largest cultural student organization on campus. Comprised of students who are interested in exploring the Asian culture and participating in different events throughout the school year, we are a fun way to get involved and meet new people. Although we are an Asian-interest organization, we welcome everybody who is interested in being a part of our family so come out and get to know us!"
+
+
+    # About section
+    [params.about]
+        enable = false
+        title = "::  About  ::"
+        subtitle = "We're an ever-growing family, attracting new individuals that bring something new to the organization each year. As a result of the diverse interests of our members, we constantly look to find new ways to share our passion with campus. Here are some of the things we do."
+        endpoint = "Interested? We meet at 5:30 on Wednesdays in UC Danforth"
+
+        # The events will be listed from the top to the bottom.
+        # All images are stored under 'static/img/about'.
+        # Replace them with your own.
+        [[params.about.events]]
+            img = "1.jpg"
+            date = ""
+            title = "Culture"
+            description = "ASA holds and attends many events throughout the year to promote and celebrate the Asian-American identity. Some of these events include Culture Night, "
+
+        [[params.about.events]]
+            img = "2.jpg"
+            date = ""
+            title = "Awareness"
+            description = "We actively "
+
+        [[params.about.events]]
+            img = "dance2.jpg"
+            date = ""
+            title = "Dance"
+            description = "One of ASA's main subgroups is dance. ASA Dance is a regular participant in Dancer's Symphosium-CMU's largest dance event-as well as other internal events. "
+
+        [[params.about.events]]
+            img = "booth.jpg"
+            date = ""
+            title = "Booth"
+            description = "ASA continues to be a well-established participant of Booth, an annual competition to conceptualize, design, and build themed structures for CMU's Spring Carnival. Members come out to contribute, crafting 3D structures, constructing frames and staircases, and painting scenery to help bring the ASA booth to life. In the process, they develop friendships that last a lifetime."
+
+
+    # Team section
+    [params.team]
+        enable = true
+        title = "::  Board  ::"
+        subtitle = ""
+
+
+    # Contact section
+    [params.contact]
+        enable = true
+        title = "::  Reach out to us!  ::"
+        subtitle  = "join our mailing list for the latest ASA events and information"
+        buttonText = "Send message"
+
+        # 'warning' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "Your Name *"
+            warning = "Please enter your name."
+
+        [params.contact.form.email]
+            text = "Your Email *"
+            warning = "Please enter your email address."
+
+        [params.contact.form.phone]
+            text = "Your Phone *"
+            warning = "Please enter your phone number."
+
+        [params.contact.form.message]
+            text = "Your Message"
+            warning = "Please enter a message."
+
+        [[params.contact.social]]
+            icon = "fa-facebook"
+            link = "https://www.facebook.com/CMUAsianStudentsAssociation/"
+
+        [[params.contact.social]]
+            icon = "fa-instagram"
+            link = "https://www.instagram.com/cmu_asa/"
+
+    # Footer section
+    [params.footer]
+        enable = true
+        subtitle = ""
+
+        [[params.footer.social]]
+            icon = "fa-facebook"
+            link = "https://www.facebook.com/CMUAsianStudentsAssociation/"
+
+        [[params.footer.social]]
+            icon = "fa-instagram"
+            link = "https://www.instagram.com/cmu_asa/"
